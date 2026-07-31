@@ -1,0 +1,2 @@
+Você tem o seguinte problema: todo ano acontece a vacinação da gripe H1N1 e, por isso, todas as pessoas deveriam se vacinar. Contudo, há uma ordem de prioridade para tomar as vacinas: primeiro, os idosos acima de 75 anos; depois, idosos entre 60 e 74 anos; e, por último, as pessoas abaixo de 60 anos. Então, como criar uma função que receba como argumento uma lista de idades e retorne uma lista filtrada de acordo com a fase? Bem, já foi definida a função filtrar anteriormente, relembre-a abaixo.
+Resposta: Funções filtrar e faixa.
