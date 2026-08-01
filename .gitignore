@@ -11,3 +11,6 @@ venv/
 
 # Arquivos de ambiente
 .env
+
+# Arquivos de testes de lógica
+playground.py
