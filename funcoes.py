@@ -1,15 +1,15 @@
-def faixa(idade):
-  if idade < 60:
-    return 'BAIXA PRIORIDADE'
-  elif idade < 75:
-    return 'MEDIA PRIORIDADE'
-  elif idade >= 75:
-    return 'ALTA PRIORIDADE'
+def primeira_fase(idade):
+  return idade >= 75
 
-def filtrar(lista, faixa_esperada):
+def segunda_fase(idade):
+  return 60 <= idade <= 74
+
+def terceira_fase(idade):
+  return idade <= 59
+
+def filtrar(lista, fase_esperada):
   nova_lista = []
   for elemento in lista:
-    if faixa(elemento) == faixa_esperada:
-
+    if fase_esperada(elemento):
       nova_lista.append(elemento)
   return nova_lista
