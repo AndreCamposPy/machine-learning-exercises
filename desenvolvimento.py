@@ -167,5 +167,22 @@ logger.critical('critico')
 
 # ==================================================
 # Exercício 4:
-#  
+#  Usando o parâmetro level no basicConfig(), você
+#  deve definir o nível de mensagens de log que deseja registrar. 
 # ==================================================
+
+import logging
+
+#Criação e configuração do objeto logger
+FORMATACAO_MSG = "%(asctime)s | %(levelname)s -> %(message)s"
+logging.basicConfig(filename = 'logs.log',
+level = logging.DEBUG,
+format = FORMATACAO_MSG)
+logger = logging.getLogger()
+
+#Testando o logger
+logger.debug('depuração')
+logger.info('informação')
+logger.warning('aviso')
+logger.error('erro')
+logger.critical('critico')
