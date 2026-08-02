@@ -146,3 +146,26 @@ print('Músicas boas de Pop:', len(musicas_boas_pop))
 print(mediana_rock)
 print('Existe alguma música mediana de Rock?', any(mediana_rock))
 print('Todas as músicas de Pop são boas?', all(boas_pop))
+
+# ==================================================
+# Exercício 3:
+# Crie mensagens de log sem precisar fazer muitas configurações. 
+# ==================================================
+
+import logging
+
+#Criação e configuração do objeto logger
+logging.basicConfig(filename = 'logs.log')
+logger = logging.getLogger()
+
+#Testando o logger
+logger.debug('depuração')
+logger.info('informação')
+logger.warning('aviso')
+logger.error('erro')
+logger.critical('critico')
+
+# ==================================================
+# Exercício 4:
+#  
+# ==================================================
