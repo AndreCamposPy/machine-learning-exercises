@@ -17,3 +17,4 @@ playground.py
 
 # Arquivos de Oficinas
 __oficinas__/
+*.log
