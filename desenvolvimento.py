@@ -186,3 +186,25 @@ logger.info('informação')
 logger.warning('aviso')
 logger.error('erro')
 logger.critical('critico')
+
+# ==================================================
+# Exercício 5:
+# Defina a data e hora de um evento ocorrido em 16/07/2014 às 23:00;
+# Obtenha a data e hora atual do sistema;
+# Calcule o tempo decorrido entre as duas datas;
+# Apresente o resultado em anos, meses, dias, horas, minutos e segundos.
+# ==================================================
+
+import datetime
+d1 = datetime.datetime(2014,7,16,23)
+d2 = datetime.datetime.now()
+diff = d1 - d2
+days = diff.days
+years, days = days // 365, days % 365
+months, days = days // 30, days % 30
+seconds = diff.seconds
+hours, seconds = seconds // 3600, seconds % 3600
+minutes, seconds = seconds // 60, seconds % 60
+print("Desde {} passaram {} anos, {} meses, {} dias" \
+", {} horas, {} minutos e {} segundos"
+.format(d1, years, months, days, hours, minutes, seconds))
