@@ -208,3 +208,28 @@ minutes, seconds = seconds // 60, seconds % 60
 print("Desde {} passaram {} anos, {} meses, {} dias" \
 ", {} horas, {} minutos e {} segundos"
 .format(d1, years, months, days, hours, minutes, seconds))
+
+# ==================================================
+# Exercício 6:
+# Utilize o método de Monte Carlo para estimar a probabilidade de dois dados,
+# lançados simultaneamente, apresentarem o mesmo lado voltado para cima.
+# Realize vários lançamentos aleatórios dos dois dados;
+# Conte quantas vezes os dois dados apresentaram o mesmo resultado;
+# Calcule a probabilidade estimada a partir da quantidade de ocorrências
+# em relação ao número total de lançamentos;
+# Apresente o resultado da probabilidade encontrada.
+# ==================================================
+
+import random
+
+numero_de_tentativas = 2000000
+quantidade_de_acertos = 0
+
+for _ in range(numero_de_tentativas):
+  dado_1 = random.randint(1,6)
+  dado_2 = random.randint(1,6)
+
+  if (dado_1 == dado_2):
+    quantidade_de_acertos += 1
+
+print(quantidade_de_acertos/numero_de_tentativas) 
