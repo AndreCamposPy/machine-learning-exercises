@@ -233,3 +233,58 @@ for _ in range(numero_de_tentativas):
     quantidade_de_acertos += 1
 
 print(quantidade_de_acertos/numero_de_tentativas) 
+
+# ============================================================
+#  Exercício 6: - OFICINA AULA 2 - PEDRA, PAPEL E TESOURA
+# ============================================================
+
+# ETAPA 1
+# ------------------------------------------------------------
+# Pedra, papel e tesoura é um jogo que possui um elemento de
+# aleatoriedade.
+#
+# Escreva um código que utilize a biblioteca Random para
+# recriar esse jogo.
+#
+# O jogo deve apresentar as opções:
+# 1 - Pedra
+# 2 - Papel
+# 3 - Tesoura
+# 4 - Sair
+#
+# O jogador pode escolher qualquer uma das opções, mas o jogo
+# somente deve finalizar quando a opção "Sair" for escolhida.
+#
+# A máquina deve escolher sua jogada de forma aleatória.
+#
+#
+# ETAPA 2
+# ------------------------------------------------------------
+# Agora, melhore o jogo fazendo com que a máquina aprenda
+# com as jogadas anteriores do jogador utilizando Machine
+# Learning.
+#
+# Para isso, utilize o algoritmo ZeroR.
+#
+# O ZeroR deve identificar qual foi a jogada mais utilizada
+# pelo jogador e, a partir disso, a máquina deve escolher a
+# jogada que vence essa escolha.
+#
+# Como a máquina não possui histórico no início da partida,
+# as primeiras jogadas devem continuar sendo aleatórias.
+#
+# Após o quinto turno, a máquina deve começar a utilizar o
+# histórico das jogadas do jogador para identificar sua
+# jogada mais frequente.
+
+
+# ============================================================
+# IMPORTAÇÃO DA BIBLIOTECA
+# ============================================================
+
+# A biblioteca random será utilizada para que a máquina possa
+# realizar suas primeiras jogadas de forma aleatória.
+
+import funcoes
+
+funcoes.jogo_pedra_papel_tesoura()
